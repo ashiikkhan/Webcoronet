@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bg-primary: #f5f5f5;
+  --bg-white: #ffffff;
+  --bg-dark: #363636;
+  --shadow-primary: rgba(0, 0, 0, 0.25);
+  --shadow-one: #ffcf2d;
+  --shadow-two: #fe5244;
+  --shadow-three: #3aa2a6;
+  --shadow-four: #73325a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  max-width: 1512px;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  border: 2px solid black;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 64px;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 36px;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+
+/* brands section */
+.brands-section {
+  width: 100%;
+  margin: auto;
+  /* padding: 50px; */
+}
+
+.brands-container {
+  width: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 86px;
+}
+.brand {
+  min-width: 554px;
+  /* height: 535px; */
+  padding: 70px;
+  /* margin: 70px; */
+  background-color: var(--bg-white);
+  border: 1px solid #8c8c8c;
+  border-radius: 30px;
+}
+
+.brand-one {
+  grid-column: 2 / 6;
+  box-shadow: 0px 6px 12px var(--shadow-primary),
+    -26px 26px 0px var(--shadow-one);
+}
+.brand-two {
+  grid-column: 7 / 11;
+  box-shadow: 0px 6px 12px var(--shadow-primary),
+    -26px 26px 0px var(--shadow-two);
+}
+.brand-three {
+  grid-column: 2/ 6;
+  box-shadow: 0px 6px 12px var(--shadow-primary),
+    -26px 26px 0px var(--shadow-three);
+}
+.brand-four {
+  grid-column: 7/ 11;
+  box-shadow: 0px 6px 12px var(--shadow-primary),
+    -26px 26px 0px var(--shadow-four);
+}
+
+@media (max-width: 992px) {
+  .brand {
+    padding: 0px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and above till next break point) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and above till next break point) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and above till next break point) */

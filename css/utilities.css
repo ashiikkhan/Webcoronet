@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  padding: 0px 72px;
+}
+/* description text styles for glabal use */
+.font-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.font-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.text-center {
+  text-align: center;
+}
+.text-sm {
+  font-size: 16px;
+  line-height: 20px;
+}
+.text-md {
+  font-size: 18px;
+  line-height: 28px;
+}
+.text-lg {
+  font-size: 20;
+  line-height: 34px;
+}
+.text-xl {
+  font-size: 24px;
+  line-height: 36px;
+}
