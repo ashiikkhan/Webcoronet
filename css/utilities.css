@@ -2,10 +2,34 @@
   width: 100%;
   padding: 0px 72px;
 }
+section {
+  margin: 50px 0;
+}
+
+.button {
+  color: var(--text-black);
+  background-color: var(--bg-yellow);
+  padding: 20px 50px;
+  border-radius: 20px;
+}
 .flex-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
 }
 /* description text styles for glabal use */
 .font-normal {
