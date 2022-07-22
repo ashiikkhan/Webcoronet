@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
+  --text-primary: #191818;
   --bg-primary: #f5f5f5;
   --bg-white: #ffffff;
   --bg-dark: #363636;
-  --shadow-primary: rgba(0, 0, 0, 0.25);
-  --shadow-one: #ffcf2d;
-  --shadow-two: #fe5244;
-  --shadow-three: #3aa2a6;
-  --shadow-four: #73325a;
+  --shadow-primary: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  --shadow-secondary: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-one: -26px 26px 0px #ffcf2d;
+  --shadow-two: -26px 26px 0px #fe5244;
+  --shadow-three: -26px 26px 0px #3aa2a6;
+  --shadow-four: -26px 26px 0px #73325a;
 }
 
 * {
@@ -44,7 +46,12 @@ h3 {
   font-size: 1.5rem;
   line-height: 36px;
 }
-
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 /* brands section */
 .brands-section {
   width: 100%;
@@ -73,23 +80,19 @@ h3 {
 
 .brand-one {
   grid-column: 2 / 6;
-  box-shadow: 0px 6px 12px var(--shadow-primary),
-    -26px 26px 0px var(--shadow-one);
+  box-shadow: var(--shadow-primary), var(--shadow-one);
 }
 .brand-two {
   grid-column: 7 / 11;
-  box-shadow: 0px 6px 12px var(--shadow-primary),
-    -26px 26px 0px var(--shadow-two);
+  box-shadow: var(--shadow-primary), var(--shadow-two);
 }
 .brand-three {
   grid-column: 2/ 6;
-  box-shadow: 0px 6px 12px var(--shadow-primary),
-    -26px 26px 0px var(--shadow-three);
+  box-shadow: var(--shadow-primary), var(--shadow-three);
 }
 .brand-four {
   grid-column: 7/ 11;
-  box-shadow: 0px 6px 12px var(--shadow-primary),
-    -26px 26px 0px var(--shadow-four);
+  box-shadow: var(--shadow-primary), var(--shadow-four);
 }
 
 @media (max-width: 992px) {

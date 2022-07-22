@@ -2,6 +2,11 @@
   width: 100%;
   padding: 0px 72px;
 }
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* description text styles for glabal use */
 .font-normal {
   font-family: 'Roboto', sans-serif;
@@ -15,18 +20,22 @@
   text-align: center;
 }
 .text-sm {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 .text-md {
+  font-size: 16px;
+  line-height: 20px;
+}
+.text-lg {
   font-size: 18px;
   line-height: 28px;
 }
-.text-lg {
+.text-xl {
   font-size: 20;
   line-height: 34px;
 }
-.text-xl {
+.text-2xl {
   font-size: 24px;
   line-height: 36px;
 }

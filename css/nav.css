@@ -1,0 +1,13 @@
+.navigation {
+  padding: 26px 0;
+  box-shadow: var(--shadow-secondary);
+}
+.nav__logo {
+  width: 60%;
+}
+.nav__menu {
+  width: 30%;
+}
+.navbar a {
+  color: var(--text-primary);
+}
