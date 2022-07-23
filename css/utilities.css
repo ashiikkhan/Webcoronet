@@ -2,6 +2,21 @@
   width: 100%;
   padding: 0px 72px;
 }
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0px 56px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px 48px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0px 16px;
+  }
+}
 section {
   margin: 50px 0;
 }
@@ -11,6 +26,16 @@ section {
   background-color: var(--bg-yellow);
   padding: 20px 50px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 16px 40px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .button {
+    padding: 12px 36px;
+  }
 }
 .flex-row {
   display: flex;
@@ -62,4 +87,17 @@ section {
 .text-2xl {
   font-size: 24px;
   line-height: 36px;
+}
+@media screen and (max-width: 1200px) {
+  .text-2xl {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .text-2xl {
+    font-size: 18px;
+  }
+  .text-md {
+    font-size: 14px;
+  }
 }

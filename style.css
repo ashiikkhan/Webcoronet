@@ -36,6 +36,16 @@ h1 {
   font-size: 64px;
   line-height: 64px;
 }
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 48px;
+  }
+}
 h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -85,6 +95,23 @@ a {
   background-color: var(--bg-white);
   border-radius: 4px;
 }
+@media screen and (max-width: 1200px) {
+  .comment {
+    width: 70%;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .comment {
+    width: 250px;
+  }
+  .comment p {
+    word-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .comment img {
   width: 15%;
 }
@@ -152,19 +179,3 @@ a {
   grid-column: 7/ 11;
   box-shadow: var(--shadow-primary), var(--shadow-four);
 }
-
-@media (max-width: 992px) {
-  .brand {
-    padding: 0px;
-  }
-}
-
-/* Small devices (landscape phones, 576px and above till next break point) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and above till next break point) */
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and above till next break point) */

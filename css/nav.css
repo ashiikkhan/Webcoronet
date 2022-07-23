@@ -1,13 +1,72 @@
 .navigation {
   padding: 26px 0;
   box-shadow: var(--shadow-secondary);
+  position: relative;
 }
 .nav__logo {
-  width: 60%;
+  width: 55%;
 }
 .nav__menu {
-  width: 30%;
+  width: 35%;
 }
 .navbar a {
   color: var(--text-primary);
+}
+.toggle__btn {
+  display: none;
+}
+#close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__logo {
+    width: 45%;
+  }
+  .nav__menu {
+    width: 45%;
+  }
+  .chat__btn {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav__logo {
+    width: 35%;
+  }
+  .nav__menu {
+    width: 55%;
+  }
+  .chat__btn {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    width: 50%;
+    position: absolute;
+    background: red;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+  }
+  .slider__column {
+    flex-direction: column;
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__logo {
+    width: 60%;
+  }
+  .chat__btn {
+    width: 20%;
+  }
+  .toggle__btn {
+    display: block;
+  }
+  #close-icon {
+    display: block;
+  }
 }

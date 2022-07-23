@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cf49a636b2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- navigation bar -->
@@ -16,8 +20,13 @@
         <span class="nav__logo"
           ><img src="images/logo white.png" alt="Webcoronet-logo"
         /></span>
-        <span class="nav__menu"
-          ><ul class="menu__list flex-row">
+        <span id="menu" class="nav__menu">
+          <i
+            id="close-icon"
+            onclick="closeSlider()"
+            class="fa-solid fa-xmark"
+          ></i>
+          <ul id="menu__li" class="menu__list flex-row">
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Blog</a></li>
@@ -25,7 +34,10 @@
             <li><a href="#">About Us</a></li>
           </ul></span
         >
-        <span><a href="#">Let's Chat</a></span>
+        <span class="chat__btn"><a href="#">Let's Chat</a></span>
+        <span class="toggle__btn">
+          <i id="icon" onclick="slideShow()" class="fa-solid fa-bars"> </i
+        ></span>
       </nav>
     </div>
     <main class="container">
@@ -151,5 +163,17 @@
         </div>
       </div>
     </div>
+    <script>
+      const menu = document.getElementById('menu');
+      const menuList = document.getElementById('menu__li');
+      const slideShow = () => {
+        menu.classList.replace('nav__menu', 'slider');
+        menuList.classList.add('slider__column');
+      };
+      const closeSlider = () => {
+        menu.classList.replace('slider', 'nav__menu');
+        menuList.classList.remove('slider__column');
+      };
+    </script>
   </body>
 </html>
